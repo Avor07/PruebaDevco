@@ -27,7 +27,7 @@ public class WriteTextTask implements Task {
                 Click.on(NotepadPage.btnTextoEnriquecido),
                 Wait.until(
                         WebElementQuestion.the(NotepadPage.btnBold) ,
-                        WebElementStateMatchers.isClickable()).forNoMoreThan(50).seconds(),
+                        WebElementStateMatchers.isEnabled()).forNoMoreThan(50).seconds(),
                 Click.on(NotepadPage.btnBold),
                 Click.on(NotepadPage.editor),
                 Clear.field(NotepadPage.editor),
