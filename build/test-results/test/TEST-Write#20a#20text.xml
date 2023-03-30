@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Write a text" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-30T13:57:00" hostname="LAPTOP-IU6ROQQ0" time="37.25">
+  <properties/>
+  <testcase name="Write a enriched text" classname="Write a text" time="37.25">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: is &quot;HHola como estas&quot;&#13;&#10;     but: was &quot;Hola como estas&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is &quot;HHola como estas&quot;
+     but: was &quot;Hola como estas&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:395)
+	at com.notepad.text.test.stepdefinitions.TextStepDefinitions.theUserShouldSeeTheText(TextStepDefinitions.java:47)
+	at ✽.the user should see the text(file:///C:/Users/Angie/Documents/SPAcademy/PruebaDevCo/src/test/resources/texto.feature:9)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 20432
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mar. 30, 2023 8:57:05 A. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 110
+mar. 30, 2023 8:57:37 A. M. org.openqa.selenium.os.OsProcess destroy
+SEVERE: Unable to kill process Process[pid=16416, exitValue=1]
+]]></system-err>
+</testsuite>

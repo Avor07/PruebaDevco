@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.4.24")
+        classpath("net.serenity-bdd:serenity-single-page-report:2.4.24")
+    }
+}
+
+
+plugins {
+    id 'java'
+}
+
+apply plugin: 'net.serenity-bdd.aggregator'
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'net.serenity-bdd:serenity-core:3.6.20'
+    implementation 'net.serenity-bdd:serenity-screenplay:3.6.20'
+    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:3.6.20'
+    testImplementation 'net.serenity-bdd:serenity-cucumber:3.6.20'
+    implementation 'net.serenity-bdd:serenity-junit:3.6.20'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    implementation 'io.cucumber:cucumber-java:7.11.1'
+    implementation 'io.cucumber:cucumber-java:7.11.1'
+}
+serenity {
+    reports = ["single-page-html"]
+}
+test {
+}
